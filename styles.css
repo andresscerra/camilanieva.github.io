@@ -1,0 +1,273 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #d114b8;
+    color: #d114b8f;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #d114b8;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 1rem;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #d114b2b6;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-top: 1px solid #444;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+}
+
+/* Estilos del main y footer */
+main {
+    padding: 0;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    background-image: url('https://mrwallpaper.com/images/hd/pink-floral-aesthetic-pattern-v8mwezgbg8f5slfm.jpg');
+
+}
+
+#home {
+    padding: 2rem;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-image: url('https://labahiamasbella.com/wp-content/uploads/2022/04/Destacada.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000;
+    
+}
+#services {
+    padding: 2rem;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: 1rem 0;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-image: url('https://images.adsttc.com/media/images/5012/c42c/28ba/0d70/2000/0008/large_jpg/stringio.jpg?1414282468');
+    background-size: cover;
+    background-position: center;
+    color: #ff08c1;
+    text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000;
+    
+    
+}
+
+#contact {
+    padding: 2rem;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: 1rem 0;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-image: url('https://www.barbosasp.com/wp-content/uploads/Salon-de-estetica-06-horizontal.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-shadow: 
+        1px 1px 0 #000, 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000;
+    
+}
+
+/* Estilos de la galería */
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    height: auto;
+}
+
+#caption {
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.video-item {
+    margin: 15px;
+    width: 300px;
+}
+
+.video-item h2 {
+    text-align: center;
+    color: #333;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+
+footer {
+    background: #d114b8;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
